@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content=" This Is Description For Project 5" />
+  <title>Project 5</title>
+  <!--Bootstrap File-->
+  <link rel="stylesheet" href="./styles/bootstrap.min.css" />
+  <!--Main Css File-->
+  <link rel="stylesheet" href="./styles/main.css" />
+  <!--Icons Library-->
+  <link rel="stylesheet" href="./styles/all.min.css" />
+</head>
+
+<body>
+  <div class="homepage">
+    <div class="head  p-4 d-flex justify-content-between">
+      <button class="back icon d-flex justify-content-center align-items-center">
+        <i class="fa-solid fa-right-long"></i>
+      </button>
+      <button class="settings icon d-flex justify-content-center align-items-center">
+        <i class="fa-solid fa-gear"></i>
+      </button>
+    </div>
+    <div class="container">
+      <div class="wrapper w-100 d-flex flex-column justify-content-center align-items-center">
+        <div class="text d-flex flex-column justify-content-center">
+          <p class="first-word">استمع</p>
+          <div class="second-line d-flex align-items-center gap-5">
+            <div class="second-word d-flex align-items-center">
+              <span class="first-letter letter m-0">ثم</span>
+            </div>
+            <p class="third-word m-0">ردد</p>
+          </div>
+        </div>
+        <button class="play-button rounded-pill">
+          <i class="fa-solid fa-play"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    class="game w-100 p-4 d-flex flex-column justify-content-between position-fixed top-50 start-50 translate-middle">
+    <div class="head d-flex justify-content-between">
+      <div class="left d-flex flex-column gap-3">
+        <div class="top d-flex gap-5">
+          <button class="back icon d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-right-long"></i>
+          </button>
+          <div class="scoreWrapper col-lg-2 col-md-3 col-6 p-0 my-2">
+            <img src="./media/images/score.svg" class="scoreIcon" />
+            <span class="score"></span>
+          </div>
+        </div>
+        <button class="bottom icon d-flex justify-content-center align-items-center" text="اضغط لسماع الكلمات">
+          <i class="fa-solid fa-exclamation"></i>
+        </button>
+      </div>
+      <div class="right d-flex gap-3">
+        <button class="volume icon d-flex justify-content-center align-items-center">
+          <i class="fa-solid fa-volume-high"></i>
+          <i class="fa-solid fa-volume-xmark off"></i>
+        </button>
+        <button class="music icon d-flex justify-content-center align-items-center">
+          <i class="fa-solid fa-music"></i>
+        </button>
+        <button class="settings icon d-flex justify-content-center align-items-center">
+          <i class="fa-solid fa-gear"></i>
+        </button>
+      </div>
+    </div>
+    <div class="body d-flex align-items-center justify-content-between gap-3">
+      <button class="left-arrow disabled arrow d-flex justify-content-center align-items-center p-2">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+      <div class="game-images first d-flex justify-content-center gap-2 flex-wrap">
+        <div class="img-container d-flex justify-content-center align-items-center" data-id="1">
+          <img src="./media/images/img1.svg" alt="picture-1" class="h-100 w-100 object-fit-contain" />
+          <span class="card-text"><span class="red">أنا</span> أكون عمرو</span>
+        </div>
+        <div class="img-container d-flex justify-content-center align-items-center" data-id="2">
+          <img src="./media/images/img2.svg" alt="picture-2" class="h-100  w-100 object-fit-contain" />
+          <span class="card-text"><span class="red">هي</span> تكون سارة</span>
+        </div>
+        <div class="img-container d-flex justify-content-center align-items-center" data-id="3">
+          <img src="./media/images/img3.svg" alt="picture-3" class="h-100 w-100 object-fit-contain" />
+          <span class="card-text"><span class="red">هو</span> يكون علي</span>
+        </div>
+        <div class="img-container d-flex justify-content-center align-items-center" data-id="4">
+          <img src="./media/images/img4.svg" alt="picture-4" class="h-100 w-100 object-fit-contain" />
+          <span class="card-text">سعيد بلقائك <span class="red"> </span>!</span>
+        </div>
+        <div class="img-container d-flex justify-content-center align-items-center" data-id="5">
+          <img src="./media/images/img5.svg" alt="picture-5" class="h-100 w-100 object-fit-contain" />
+          <span class="card-text"><span class="red">هم</span> يكونوا سارة وعلي</span>
+        </div>
+        <div class="img-container d-flex justify-content-center align-items-center" data-id="6">
+          <img src="./media/images/img5.svg" alt="picture-6" class="h-100 w-100 object-fit-contain" />
+          <span class="card-text"><span class="red">هم</span> يكونوا سارة وعلي</span>
+        </div>
+      </div>
+      <button class="right-arrow arrow d-flex justify-content-center align-items-center p-2">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+    </div>
+    <button class="pause icon d-flex justify-content-center align-items-center">
+      <i class="fa-solid fa-pause"></i>
+    </button>
+  </div>
+  <div class="success-card rounded-5 p-3">
+    <button class="closeModal rounded-circle">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <div class="card-wrapper h-100 rounded-5">
+      <div class="img-wrapper d-flex justify-content-center align-items-center">
+        <img src="./media/images/bunny.svg" alt="bunny image" class="w-100 object-fit-contain" />
+      </div>
+      <div class="outer-card py-3 rounded-1">
+        <div class="text-card d-flex gap-3 justify-content-center align-items-center">
+          <div class="content d-flex flex-column align-items-center">
+            <span class="message-text">الإجابات الصحيحة</span>
+            <span class="score-text d-flex justify-content-center gap-2 flex-wrap"></span>
+          </div>
+          <div class="score-icon-wrapper">
+            <img src="./media/images/object.svg" alt="score image" class="w-100 object-fit-contain" />
+          </div>
+        </div>
+      </div>
+      <div class="arrows py-4 d-flex justify-content-center gap-5">
+        <button class="left-arrow arrow d-flex justify-content-center align-items-center">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <button class="left-right arrow d-flex justify-content-center align-items-center">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="overlay"></div>
+  <audio id="start-audio" src="./media/audios/audio.mp3"></audio>
+  <audio id="1" src="./media/audios/audio.mp3"></audio>
+  <audio id="2" src="./media/audios/audio.mp3"></audio>
+  <audio id="3" src="./media/audios/audio.mp3"></audio>
+  <audio id="4" src="./media/audios/audio.mp3"></audio>
+  <audio id="5" src="./media/audios/audio.mp3"></audio>
+  <audio id="6" src="./media/audios/audio.mp3"></audio>
+  <script src="./JS/script.js" async></script>
+</body>
+
+</html>
